@@ -1,5 +1,10 @@
 {
-    "posts": [
-        
-    ]
+  "posts": [],
+  "users": [
+    {
+      "pseudo": "Bidule_78",
+      "age": "Yo les gens !",
+      "id": 1
+    }
+  ]
 }

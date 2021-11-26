@@ -48,3 +48,25 @@ const init = {
 // npm i -g json-server
 // faire tourner le serveur: json-server --w <nom-du-fichier>
 // Le serveur va travailler avec "db.json" comme si c'était une BDD distante
+
+// Pour envoyer des données en POST, on envoie les informations en JSON (JSON.stringigy) dans le 'body'
+// Pour la méthode DELETE, on doit passer en paramètre l'id dans l'url (ex: 'http://localhost:3000/posts/' + id)
+const init2 = {
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+        pseudo: "Bidule_78",
+        age: "Yo les gens !"
+    }),
+    mode: "cors",
+    credentials: "same-origin",
+};
+
+document.querySelector("form").addEventListener("submit", () => {
+    fetch('http://localhost:3000/users', init2)
+    .then(() => console.log("data envoyée")
+    );
+});
+
