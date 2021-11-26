@@ -117,6 +117,7 @@ fetch('data.json')
 
 // CLIENT STORAGE
 //---------------
+// Explication Local Storage et Session Storage : https://www.youtube.com/watch?v=ITmKqkmHlnY
 
 // Local Storage
 localStorage.data = "Je stock la data";
@@ -131,3 +132,16 @@ const obj = {
 // Il faut passer des chaînes de caractères
 localStorage.user = JSON.stringify(obj);
 // console.log(JSON.parse(localStorage.user));
+
+//Session Storage
+// sessionStorage.dataSettings = "55px";
+// console.log(sessionStorage.dataSettings);
+sessionStorage.clear();
+
+//--------
+// Cookies
+document.cookie = "username=FromScratch";
+
+//Bonne pratique
+document.cookie = "pseudo=FS;path=/; max-age=450000; secure; samesite";
+
