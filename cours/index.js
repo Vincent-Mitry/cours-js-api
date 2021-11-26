@@ -79,7 +79,7 @@ setTimeout(() => {
 }, 2000);
 
 // Promise
-fetch('monlien').then((res) => res)
+// fetch('monlien').then((res) => res)
 
 // async/await
 async function fetchData() {
@@ -95,3 +95,18 @@ const fetchData2 = async () => {
 
     await executeFonction();
 }
+
+//--------
+// LE JSON
+//--------
+
+// Méthode .json() => méthode qui s'auto-résout en renvoyant le Body de la requête.
+
+fetch('data.json')
+    .then(res => res.json())
+    .then(json => {
+        // Stringify => convertit en JSON
+        let settings = JSON.stringify(json);
+        // Parse => transforme json en objet js
+        // console.log(JSON.parse(settings));
+    });
