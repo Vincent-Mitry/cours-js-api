@@ -70,3 +70,28 @@ document.querySelector("form").addEventListener("submit", () => {
     );
 });
 
+//-----------
+// Asynchrone
+//-----------
+
+setTimeout(() => {
+    // console.log("test");
+}, 2000);
+
+// Promise
+fetch('monlien').then((res) => res)
+
+// async/await
+async function fetchData() {
+    await fetch('monlien')
+    // attend que le await soit exécuté avant de faire la suite
+
+    await executeFonction();
+}
+
+const fetchData2 = async () => {
+    await fetch('monlien')
+    // attend que le await soit exécuté avant de faire la suite
+
+    await executeFonction();
+}
