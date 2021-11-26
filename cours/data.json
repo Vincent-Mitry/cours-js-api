@@ -1,0 +1,10 @@
+{
+    "keyboard.dispatch": "keyCode",
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.lastDownload": 1632823376200,
+    "workbench.colorTheme": "Dracula",
+    "explorer.compactFolders": false,
+    "emmet.includeLanguages": {
+        "twig": "html"
+    }
+}
