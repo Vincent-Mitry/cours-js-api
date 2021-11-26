@@ -110,3 +110,24 @@ fetch('data.json')
         // Parse => transforme json en objet js
         // console.log(JSON.parse(settings));
     });
+
+//--------
+// Web API
+//--------
+
+// CLIENT STORAGE
+//---------------
+
+// Local Storage
+localStorage.data = "Je stock la data";
+// console.log(localStorage.data);
+// document.body.textContent = localStorage.data;
+localStorage.removeItem("data");
+
+const obj = {
+    name: "Denis",
+    age: 22,
+};
+// Il faut passer des chaînes de caractères
+localStorage.user = JSON.stringify(obj);
+// console.log(JSON.parse(localStorage.user));
